@@ -1,34 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;800&display=swap');
 body{
     margin:0;
+    font-family: 'Montserrat', sans-serif;
    
 }
 .container-login{
-    background-color: azure;
+    background-color: #2f2f2f;
+    display: flex;
+    margin: 4vw;
+    height: 85vh;
+    border-radius: 6vw;
+    background-color: rgb(32 32 32 / 70%);
 }
 .main-login{
     width: 100vw;
     height: 100vh;
-    background-color: bisque;
+    background-image: linear-gradient(50deg,rgb(165,0,78), rgb(131,2,80),rgb(76,6,84),rgb(53,7,86),rgb(39,8,87),rgb(23,9,88));
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 .left-login{
-    width: 60vw;
-    height: 100vh;
+    width: 40vw;
     display: flex;
+    align-items: flex-start;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    flex-direction: initial;
 }
-.left-login >h1{ 
-    
-    color: darksalmon;
-}
+
 .right-login{
-    width: 50vw;
-    height: 100vh;
+    width: 40vw;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,11 +40,102 @@ body{
 
 }
 
+
 .card-login{
     width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10vh 10vh;
+    padding: 30px 35px;
+    background-image: linear-gradient(50deg,rgb(165,0,78), rgb(131,2,80),rgb(76,6,84),rgb(53,7,86),rgb(39,8,87),rgb(23,9,88));
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgb(0, 0, 0);
+}
+.card-login>h2{
+    color: aliceblue;
+}
+
+
+.fields-login{
+    display: flex ;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    width: 100%;
+
+}
+
+.fields-login >input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: aliceblue;
+    color: beige;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #5555;
+    box-sizing: border-box;
+    outline:  invert;
+    outline-color: rgb(38, 24, 51)
+}
+.fields-login >label{
+    margin-bottom: 10px;
+    color: rgb(213, 210, 198);
+}
+
+.fields-login> input::placeholder{
+    color: rgb(129, 127, 127);
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 16px;    
+    margin-top: 30px;
+    border:none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 800;
+    cursor: pointer;
+    letter-spacing: 3px;
+    color: rgb(210, 210, 210);
+    background:#2e2137 ;
+    box-shadow: 0px 10px 40px -10px #f4d0ff;
+}
+.left-login-img{
+width: 40vw;
+align-self: center;
+}
+@media only screen and (min-width: 1200px){
+    .left-login-img{
+        width: 30vw;
+    }
+}
+@media only screen and (max-width: 700px){
+    .container-login {
+    height: 90vh;
+    width: 80%;
+    align-items: center;
+    flex-direction: column;
+    transform: translate(10px, -50px);
+    padding-right: 2vh;
+    }
+    .card-login {
+        width: 100%;
+        padding: 20px 35px;
+        transform: translate(10px, -50px);
+    }
+
+    .right-login {
+        width: 65vw;
+        flex-direction: revert;
+    }
+    .left-login-img {
+        width: 45vw;
+    }
+    .main-login {
+        
+        height: 110vh;
+    }
 }
