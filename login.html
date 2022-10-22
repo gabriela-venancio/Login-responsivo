@@ -8,13 +8,18 @@
     <title>Document</title>
 </head>
 <body>
+    
     <div class="main-login">
+        
         <div class="container-login">
             <div class="left-login">
-                <h1>faça o login <br>venha conheçer nossos produtos</h1>
+               
+                <img src = "logosemfundo.png" class = "left-login-img" alt="logo wossiman segurança">
+            </div>
                 <div class="right-login">
+                    <input class = "ckeckboxCadastroLogin" type="checkbox">
                         <div class = "card-login">
-                            <h2>Entrar</h2>
+                            <h2>Log-In</h2>
                                 <div class = "fields-login">
                                     <label for="usuario">Usuário</label>
                                     <input type="text" name="usuario" placeholder="Usuário">
@@ -23,11 +28,37 @@
                                     <label for="senha">Senha</label>
                                     <input type="password" name="senha" placeholder="Senha">
                                 </div>
+                                   <div><button class="btn-login">Entrar</button></div>
+                                     
+                                
                         </div>
-                    <button class="btn-login">Entrar</button>
+                        <div class = "cadastro-login">
+                            <h2>Cadastro</h2>
+                                <div class = "fields-cadastro">
+                                    <label for="usuario">Usuário</label>
+                                    <input type="text" name="usuario" placeholder="Usuário">
+                                </div>
+                                <div class = "fields-cadastro">
+                                    <label for="email">e-mail</label>
+                                    <input type="text" name="email" placeholder="E-mail">
+                                </div>
+                                <div class = "fields-cadastro">
+                                    <label for="senha">Senha</label>
+                                    <input type="password" name="senha" placeholder="Senha">
+                                </div>
+                                <div class = "fields-cadastro">
+                                    <label for="senha">Confirmação </label>
+                                    <input type="password" name="senha" placeholder="confirmação da Senha">
+                                </div>
+                                   <div><button class="btn-cadastro">Cadastro</button></div>
+                                     
+                                
+                        </div>
+                    
                 </div>  
-            </div>
+            
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
